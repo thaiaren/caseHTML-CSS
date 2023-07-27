@@ -1,0 +1,66 @@
+@use '../abstracts/mixins' as m;
+.list-toogle {
+    display: none;
+}
+@include m.tablet {
+    .list-toogle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px 0;
+        row-gap: 30px;
+        border-radius: 10px;
+        background-color: #1e1e2a;
+        transition: all 0.5s ease;
+        margin-top: 100px;
+        display: none;
+
+        &.active {
+            display: flex;
+        }
+        .items-toogle {
+            display: flex;
+            gap: 20px;
+            border-bottom: 1px solid rgb(64, 60, 60);
+            padding-bottom: 10px;
+
+            &:hover {
+                color: #2894ff;
+            }
+
+            &.category {
+                position: relative;
+            }
+
+            .toogle-category {
+                display: flex;
+                gap: 20px;
+            }
+            .toogle-category-items {
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+                margin-top: 10px;
+            }
+            .toogle-movie-item {
+                color: white;
+
+                &:hover {
+                    color: #2894ff;
+                }
+            }
+        }
+    }
+}
+@include m.mobile {
+    .list-toogle {
+        font-size: 10px;
+    }
+}
+
+.items-toogle {
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid rgb(64, 60, 60);
+    padding-bottom: 10px;
+}

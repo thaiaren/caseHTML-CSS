@@ -1,0 +1,177 @@
+@use '../abstracts/mixins' as m;
+
+.trailer-video {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+    border-radius: 0.5rem;
+
+    @include m.tablet {
+        & {
+            margin-top: 90px;
+        }
+    }
+
+    video {
+        position: relative;
+        width: 100%;
+    }
+
+    .trailer-text {
+        padding-left: 40px;
+        position: absolute;
+        max-width: 20%;
+
+        & p {
+            font-size: 1vw;
+            margin: 10px 0 20px;
+            color: var(--main-color);
+        }
+        .trailer-title {
+            font-size: 1vw;
+            font-weight: 600;
+        }
+
+        .btn-play-movie {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            color: #2894ff;
+            font-size: 1vw;
+            height: 3vw;
+            border-radius: 4px;
+            .watch-movie {
+                background-color: #262c37;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                width: 100px;
+                height: 40px;
+                &:hover {
+                    background-color: #2894ff;
+                }
+
+                @include m.tablet {
+                    & {
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+.movies {
+    .heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: var(--container-color);
+        padding: 8px 14px;
+        border: 1px solid hsl(200 100% 99% / 5%);
+        padding: 10px 14px;
+        &-title {
+            font-size: 30px;
+            font-weight: 500;
+        }
+    }
+    .movies-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+
+        @include m.mobile {
+            & {
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            }
+        }
+        @include m.tablet {
+            & {
+                margin-bottom: 50px;
+            }
+        }
+
+        .movie-box {
+            position: relative;
+            width: 100%;
+            height: 380px;
+            overflow: hidden;
+
+            @include m.mobile {
+                & {
+                    height: 230px;
+                }
+            }
+
+            &:hover .movie-box-img {
+                transform: scale(1.1);
+                transform: 0.5;
+            }
+
+            .movie-box-img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            &:hover .box-text .fa-solid {
+                display: block;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            // .movie-box:hover .fa-solid {
+            //     display: block;
+            //     display: flex;
+            //     align-items: center;
+            //     justify-content: center;
+            // }
+
+            .box-text {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                /* padding: 14px; */
+                background: linear-gradient(
+                    8deg,
+                    hsl(240 17% 14%/ 74%) 14%,
+                    hls(240 17% 14%/ 14%) 44%
+                );
+                overflow: hidden;
+                font-weight: 100;
+
+                h2 {
+                    font-size: 18px;
+                    font-weight: 200;
+                }
+            }
+            @include m.tablet {
+                & .box-text {
+                    font-size: 14px;
+                }
+            }
+
+            @include m.mobile {
+                & .box-text {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+@include m.mobile {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+// .movie-box {
+//     position: relative;
+//     width: 100%;
+//     height: 380px;
+//     overflow: hidden;
+// }

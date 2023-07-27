@@ -1,0 +1,246 @@
+@use '../abstracts/mixins' as m;
+.play-container {
+    position: relative;
+    &.container {
+        margin-top: 50px;
+    }
+    .watch-btn {
+        .fa-play {
+            display: flex;
+        }
+
+        .play-img {
+            height: 100%;
+        }
+
+        @include m.mobile {
+            &.container {
+                margin-top: 100px;
+            }
+        }
+    }
+
+    .play-text {
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        margin-left: 30px;
+        z-index: 400;
+        .icon-start {
+            margin: 20px 0;
+            color: var(--main-color);
+        }
+
+        .btn-play-movie {
+            display: flex;
+        }
+        @include m.tablet {
+            .name-movie {
+                font-size: 16px;
+            }
+
+            .icon-start {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .video-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        background: hsl(234 10% 20% /60%);
+        z-index: 400;
+
+        &.show-video {
+            display: flex;
+        }
+
+        .video-box {
+            position: relative;
+            width: 80%;
+            height: 80%;
+
+            #video {
+                position: relative;
+                width: 100%;
+                aspect-ratio: 16/9;
+            }
+
+            .close-video {
+                position: absolute;
+                top: -35px;
+                right: 0;
+                font-size: 30px;
+                color: var(--main-color);
+            }
+        }
+    }
+
+    .video-trailer {
+        position: fixed;
+        display: none;
+        top: 0;
+        left: 0;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        background: hsl(234 10% 20% /60%);
+        z-index: 400;
+
+        &.show-trailer {
+            display: flex;
+        }
+
+        .trailer-box {
+            position: relative;
+            width: 80%;
+            height: 80%;
+
+            #trailer {
+                width: 100%;
+                aspect-ratio: 16/9;
+            }
+            .fa-xmark {
+                position: absolute;
+                top: -35px;
+                right: 0;
+                font-size: 35px;
+                color: var(--main-color);
+                z-index: 1000;
+            }
+        }
+    }
+
+    .info-movie .table-movie {
+        padding-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 10px;
+    }
+
+    @include m.tablet {
+        .container {
+            padding: 0, 20px;
+        }
+    }
+}
+
+.info-movie {
+    .table-movie {
+        padding-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        text-align: center;
+
+        @include m.tablet {
+            & {
+                font-size: 16px;
+            }
+        }
+
+        @include m.mobile {
+            & {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .content-movie {
+        margin-top: 10px;
+        line-height: 20px;
+
+        .content-review {
+            .text-info {
+                display: none;
+            }
+            .text-info.active {
+                display: block;
+            }
+
+            .show-text {
+                color: var(--color-blue);
+            }
+        }
+    }
+    @include m.mobile {
+        .content-movie {
+            font-size: 12px;
+        }
+    }
+
+    .performer {
+        margin-top: 30px;
+        .cast-heading {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--main-color);
+        }
+
+        .cast {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+
+            .cast-box {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .cars-img {
+                    height: 180px;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+        }
+        @include m.mobile {
+            .cast {
+                grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+                gap: 20px;
+                .cast-box {
+                    font-size: 12px;
+                    align-items: center;
+                    .cars-img {
+                        height: 50px;
+                        width: 50px;
+                        border-radius: 50px;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+            }
+        }
+        @include m.tablet {
+            .cast {
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                gap: 20px;
+                .cast-box {
+                    font-size: 15px;
+                    align-items: center;
+                    .cars-img {
+                        height: 100px;
+                        width: 100px;
+                        border-radius: 100px;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+            }
+        }
+    }
+    .popular-movies {
+        margin-bottom: 50px;
+    }
+}

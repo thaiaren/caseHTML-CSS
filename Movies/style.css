@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Poppins:ital,wght@0,100;0,200;1,100&display=swap');
+
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+}
+
+:root {
+    /* ffb43a */
+    --main-color: rgb(255, 180, 58);
+    --hover-color: hsl(37, 94%, 57%);
+    --body-color: #1e1e2a;
+    --container-color: #2d2e37;
+    --text-color: #fcfeff;
+    --color-blue: #2894ff;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    padding: 3rem 0px 2rem;
+    border: 1px solid yellow;
+}
+
+.fa-solid {
+    cursor: pointer;
+}
+
+body {
+    background: var(--body-color);
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1260px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--body-color);
+    z-index: 100;
+} */
+h2 {
+    color: #ebebc8;
+}
+
+/* ----thể loại */
+
+/* thể loại end---------- */
+
+/* conten */
+
+/* ///// */
+
+/* html2 */
+
+/* video */
+
+/* .table-movie {
+    width: 1000px;
+    height: 100px;
+    margin: auto;
+  } */
+/* nội dung phim */
+
+/*  info */
+
+/* button xem phim */
+
+.menu-end {
+    display: flex;
+    gap: 30px;
+}
+
+.menu-end ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* .movies-content1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+} */
+
+@media (max-width: 1024px) {
+    /* header .nav .home {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: auto;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        padding-top: 10px;
+        flex-direction: row;
+        row-gap: 1px;
+        border-top: 1px solid hsl(200, 100%, 99%, 0.5);
+        background: linear-gradient(
+            8deg,
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+        );
+    } */
+}
+@media (max-width: 768px) {
+    /* input seach */
+    /* header .nav .header-top .seach .seach-box {
+       
+    } */
+    /* header .nav .header-top .seach .seach-box.active {
+        display: flex;
+    } */
+
+    /* .icon-on-input.active {
+        display: none;
+    } */
+    /* header .nav .header-top .icon-off-input.active {
+        display: flex;
+        color: #2894ff;
+    } */
+    /* input seach end */
+
+    /* icon seach */
+
+    /* header .nav .header-top .icon-seach {
+        display: flex;
+    } */
+    /* icon seach end */
+
+    /* .header-top {
+        display: flex;
+    } */
+    /* .logo {
+        display: flex;
+        align-items: center;
+    } */
+
+    /* .seach {
+        margin-top: -10px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    } */
+
+    /* thể loại */
+    /* .head-menu {
+        display: none;
+    } */
+    /* thể loại end */
+
+    /* toogle */
+
+    /* lider */
+
+    /* .movies-content */
+
+    /*  */
+
+    /* footer */
+    .end-movie-content {
+        display: none;
+    }
+    /* footer end */
+}

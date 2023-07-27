@@ -1,0 +1,100 @@
+@use '../abstracts/mixins' as m;
+.popular-content {
+    max-width: 100%;
+    position: relative;
+
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        color: var(--text-color);
+        font-size: 30px !important;
+        font-weight: 700;
+    }
+    @include m.tablet {
+        .swiper-button-prev::after,
+        .swiper-button-next::after {
+            font-size: 20px !important;
+        }
+    }
+    @include m.mobile {
+        .swiper-button-prev::after,
+        .swiper-button-next::after {
+            font-size: 16px !important;
+        }
+    }
+    .swiper-wrapper {
+        column-gap: 10px;
+
+        .swiper-slide {
+            width: 100px;
+            .movie-box {
+                position: relative;
+                width: 100%;
+                height: 380px;
+                overflow: hidden;
+
+                &:hover .movie-box-img {
+                    transform: scale(1.1);
+                    transform: 0.5;
+                }
+
+                .movie-box-img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                &:hover .box-text .fa-solid {
+                    display: block;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                // .movie-box:hover .fa-solid {
+                //     display: block;
+                //     display: flex;
+                //     align-items: center;
+                //     justify-content: center;
+                // }
+
+                .box-text {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    /* padding: 14px; */
+                    background: linear-gradient(
+                        8deg,
+                        hsl(240 17% 14%/ 74%) 14%,
+                        hls(240 17% 14%/ 14%) 44%
+                    );
+                    overflow: hidden;
+                    font-weight: 100;
+
+                    h2 {
+                        font-size: 18px;
+                        font-weight: 200;
+                    }
+                }
+                @include m.tablet {
+                    & .box-text {
+                        font-size: 14px;
+                    }
+                }
+
+                @include m.mobile {
+                    & {
+                        height: 250px;
+                    }
+
+                    & .box-text {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}

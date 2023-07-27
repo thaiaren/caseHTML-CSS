@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Black Adam</title>
+        <link rel="stylesheet" href="./scss/style.css" />
+
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="./swiper-bundle.min.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+    </head>
+
+    <body>
+        <header>
+            <div class="nav container">
+                <div class="header-top">
+                    <div class="toogle-box">
+                        <div class="toogle-menu">
+                            <a href="#" class="toggle-icon">
+                                <span class="icon"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="logo">
+                        <a href="index.html" class="link-logo">
+                            <img src="./img/avengers-logo.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="head-menu">
+                        <ul class="list-menu">
+                            <li class="item-menu">Phim mới</li>
+                            <li class="item-menu">Phim lẻ</li>
+                            <li class="item-menu">Phim Bộ</li>
+                            <li class="item-menu category">
+                                Thể Loại
+                                <div class="category-list">
+                                    <ul class="category-items">
+                                        <li class="movie-item">
+                                            <i
+                                                class="fa-solid fa-caret-right"
+                                            ></i>
+                                            <span>Phim Chiếu rạp</span>
+                                        </li>
+                                        <li class="movie-item">
+                                            <i
+                                                class="fa-solid fa-caret-right"
+                                            ></i>
+                                            <span>Phim tình cảm</span>
+                                        </li>
+                                        <li class="movie-item">
+                                            <i
+                                                class="fa-solid fa-caret-right"
+                                            ></i>
+                                            <span>Phim hành động</span>
+                                        </li>
+                                        <li class="movie-item">
+                                            <i
+                                                class="fa-solid fa-caret-right"
+                                            ></i>
+                                            <span>Phim chiến tranh</span>
+                                        </li>
+                                        <li class="movie-item">
+                                            <i
+                                                class="fa-solid fa-caret-right"
+                                            ></i>
+                                            <span>Phim BL</span>
+                                        </li>
+                                        <li class="movie-item">
+                                            <i
+                                                class="fa-solid fa-caret-right"
+                                            ></i>
+                                            <span>Phim gia đình</span>
+                                        </li>
+                                        <li class="movie-item">
+                                            <i
+                                                class="fa-solid fa-caret-right"
+                                            ></i>
+                                            <span>Phim Netfix</span>
+                                        </li>
+                                        <li class="movie-item">
+                                            <i
+                                                class="fa-solid fa-caret-right"
+                                            ></i>
+                                            <span>Phim hoạt hình</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="category-items">
+                                        <li class="movie-item">
+                                            <i
+                                                class="fa-solid fa-caret-right"
+                                            ></i>
+                                            <span>Phim cổ trang</span>
+                                        </li>
+                                        <li class="movie-item">
+                                            <i
+                                                class="fa-solid fa-caret-right"
+                                            ></i>
+                                            <span>Phim bí ẩn</span>
+                                        </li>
+                                        <li class="movie-item">
+                                            <i
+                                                class="fa-solid fa-caret-right"
+                                            ></i>
+                                            <span>Phim võ thuật</span>
+                                        </li>
+                                        <li class="movie-item">
+                                            <i
+                                                class="fa-solid fa-caret-right"
+                                            ></i>
+                                            <span>Phim phiêu lưu</span>
+                                        </li>
+                                        <li class="movie-item">
+                                            <i
+                                                class="fa-solid fa-caret-right"
+                                            ></i>
+                                            <span>Phim khoa học</span>
+                                        </li>
+                                        <li class="movie-item">
+                                            <i
+                                                class="fa-solid fa-caret-right"
+                                            ></i>
+                                            <span>Phim âm nhạc</span>
+                                        </li>
+                                        <li class="movie-item">
+                                            <i
+                                                class="fa-solid fa-caret-right"
+                                            ></i>
+                                            <span>Phim chính kịch</span>
+                                        </li>
+                                        <li class="movie-item">
+                                            <i
+                                                class="fa-solid fa-caret-right"
+                                            ></i>
+                                            <span>Phim siêu nhiên</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="category-items">
+                                        <li class="movie-item">
+                                            <i
+                                                class="fa-solid fa-caret-right"
+                                            ></i>
+                                            <span>Phim tâm lý</span>
+                                        </li>
+                                        <li class="movie-item">
+                                            <i
+                                                class="fa-solid fa-caret-right"
+                                            ></i>
+                                            <span>Phim kinh dị</span>
+                                        </li>
+                                        <li class="movie-item">
+                                            <i
+                                                class="fa-solid fa-caret-right"
+                                            ></i>
+                                            <span>Phim kịch tính</span>
+                                        </li>
+                                        <li class="movie-item">
+                                            <i
+                                                class="fa-solid fa-caret-right"
+                                            ></i>
+                                            <span>Phim hài</span>
+                                        </li>
+                                        <li class="movie-item">
+                                            <i
+                                                class="fa-solid fa-caret-right"
+                                            ></i>
+                                            <span>Phim hình sự</span>
+                                        </li>
+                                        <li class="movie-item">
+                                            <i
+                                                class="fa-solid fa-caret-right"
+                                            ></i>
+                                            <span>Phim viễn tưởng</span>
+                                        </li>
+                                        <li class="movie-item">
+                                            <i
+                                                class="fa-solid fa-caret-right"
+                                            ></i>
+                                            <span>Phim thần thoại</span>
+                                        </li>
+                                        <li class="movie-item">
+                                            <i
+                                                class="fa-solid fa-caret-right"
+                                            ></i>
+                                            <span>TV shows</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="item-menu nation-container">
+                                Quốc gia
+                                <div class="nation">
+                                    <ul class="nation-list">
+                                        <li class="nation-item">
+                                            <i
+                                                class="fa-solid fa-caret-right"
+                                            ></i>
+                                            <span>Phim Âu Mỹ</span>
+                                        </li>
+                                        <li class="nation-item">
+                                            <i
+                                                class="fa-solid fa-caret-right"
+                                            ></i>
+                                            <span>Phim Nhật bản</span>
+                                        </li>
+                                        <li class="nation-item">
+                                            <i
+                                                class="fa-solid fa-caret-right"
+                                            ></i>
+
+                                            <span>Phim Thái Lan</span>
+                                        </li>
+                                        <li class="nation-item">
+                                            <i
+                                                class="fa-solid fa-caret-right"
+                                            ></i>
+                                            <span> Phim Việt Nam</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="nation-list">
+                                        <li class="nation-item">
+                                            <i
+                                                class="fa-solid fa-caret-right"
+                                            ></i>
+                                            <span>Phim Hàn Quốc</span>
+                                        </li>
+                                        <li class="nation-item">
+                                            <i
+                                                class="fa-solid fa-caret-right"
+                                            ></i>
+                                            <span>Phim Đài Loan</span>
+                                        </li>
+                                        <li class="nation-item">
+                                            <i
+                                                class="fa-solid fa-caret-right"
+                                            ></i>
+                                            <span>Phim Ấn Độ</span>
+                                        </li>
+                                        <li class="nation-item">
+                                            <i
+                                                class="fa-solid fa-caret-right"
+                                            ></i>
+                                            <span>Phim Indonesia</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="nation-list">
+                                        <li class="nation-item">
+                                            <i
+                                                class="fa-solid fa-caret-right"
+                                            ></i>
+                                            <span>Phim Trung Quốc </span>
+                                        </li>
+                                        <li class="nation-item">
+                                            <i
+                                                class="fa-solid fa-caret-right"
+                                            ></i>
+                                            <span>Phim Hồng Công</span>
+                                        </li>
+                                        <li class="nation-item">
+                                            <i
+                                                class="fa-solid fa-caret-right"
+                                            ></i>
+                                            <span>Phim Philippines</span>
+                                        </li>
+                                        <li class="nation-item">
+                                            <i
+                                                class="fa-solid fa-caret-right"
+                                            ></i>
+                                            <span>Phim Singgapore</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="icon-seach">
+                        <div class="icon-on-input">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="icon-off-input">
+                            <i class="fa-solid fa-x"></i>
+                        </div>
+                    </div>
+                    <div class="seach">
+                        <div class="seach-box">
+                            <input
+                                type="search"
+                                name=""
+                                id="search-input"
+                                placeholder="tìm kiếm"
+                            />
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home">
+                    <a href="index.html" class="home-link">
+                        <i class="fa fa-solid fa-house"></i>
+                        <span class="home-link-title">Home</span>
+                    </a>
+
+                    <a href="#home" class="home-link">
+                        <i class="fa fa-compass"></i>
+                        <span class="home-link-title">Explore</span>
+                    </a>
+                    <a href="#home" class="home-link">
+                        <i class="fa fa-tv"></i>
+                        <span class="home-link-title">Movies</span>
+                    </a>
+                    <a href="#home" class="home-link">
+                        <i class="fa fa-heart"></i>
+                        <button onclick="addRemove(id)" class="home-link-title">
+                            remove
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <ul class="list-toogle">
+            <li class="items-toogle">Phim mới</li>
+            <li class="items-toogle">Phim bộ</li>
+            <li class="items-toogle category">
+                Thể loại
+                <div class="toogle-category">
+                    <ul class="toogle-category-items">
+                        <li class="toogle-movie-item">
+                            <i class="fa-solid fa-caret-right"></i>
+                            <span>Phim Chiếu rạp</span>
+                        </li>
+                        <li class="toogle-movie-item">
+                            <i class="fa-solid fa-caret-right"></i>
+                            <span>Phim tình cảm</span>
+                        </li>
+                        <li class="toogle-movie-item">
+                            <i class="fa-solid fa-caret-right"></i>
+                            <span>Phim hành động</span>
+                        </li>
+                        <li class="toogle-movie-item">
+                            <i class="fa-solid fa-caret-right"></i>
+                            <span>Phim chiến tranh</span>
+                        </li>
+                        <li class="toogle-movie-item">
+                            <i class="fa-solid fa-caret-right"></i>
+                            <span>Phim BL</span>
+                        </li>
+                        <li class="toogle-movie-item">
+                            <i class="fa-solid fa-caret-right"></i>
+                            <span>Phim gia đình</span>
+                        </li>
+                        <li class="toogle-movie-item">
+                            <i class="fa-solid fa-caret-right"></i>
+                            <span>Phim Netfix</span>
+                        </li>
+                        <li class="toogle-movie-item">
+                            <i class="fa-solid fa-caret-right"></i>
+                            <span>Phim hoạt hình</span>
+                        </li>
+                    </ul>
+
+                    <ul class="toogle-category-items">
+                        <li class="toogle-movie-item">
+                            <i class="fa-solid fa-caret-right"></i>
+                            <span>Phim cổ trang</span>
+                        </li>
+                        <li class="toogle-movie-item">
+                            <i class="fa-solid fa-caret-right"></i>
+                            <span>Phim bí ẩn</span>
+                        </li>
+                        <li class="toogle-movie-item">
+                            <i class="fa-solid fa-caret-right"></i>
+                            <span>Phim võ thuật</span>
+                        </li>
+                        <li class="toogle-movie-item">
+                            <i class="fa-solid fa-caret-right"></i>
+                            <span>Phim phiêu lưu</span>
+                        </li>
+                        <li class="toogle-movie-item">
+                            <i class="fa-solid fa-caret-right"></i>
+                            <span>Phim khoa học</span>
+                        </li>
+                        <li class="toogle-movie-item">
+                            <i class="fa-solid fa-caret-right"></i>
+                            <span>Phim âm nhạc</span>
+                        </li>
+                        <li class="toogle-movie-item">
+                            <i class="fa-solid fa-caret-right"></i>
+                            <span>Phim chính kịch</span>
+                        </li>
+                        <li class="toogle-movie-item">
+                            <i class="fa-solid fa-caret-right"></i>
+                            <span>Phim siêu nhiên</span>
+                        </li>
+                    </ul>
+
+                    <ul class="toogle-category-items">
+                        <li class="toogle-movie-item">
+                            <i class="fa-solid fa-caret-right"></i>
+                            <span>Phim tâm lý</span>
+                        </li>
+                        <li class="toogle-movie-item">
+                            <i class="fa-solid fa-caret-right"></i>
+                            <span>Phim kinh dị</span>
+                        </li>
+                        <li class="toogle-movie-item">
+                            <i class="fa-solid fa-caret-right"></i>
+                            <span>Phim kịch tính</span>
+                        </li>
+                        <li class="toogle-movie-item">
+                            <i class="fa-solid fa-caret-right"></i>
+                            <span>Phim hài</span>
+                        </li>
+                        <li class="toogle-movie-item">
+                            <i clatoogle-ss="fa-solid fa-caret-right"></i>
+                            <span>Phim hình sự</span>
+                        </li>
+                        <li class="toogle-movie-item">
+                            <i class="fa-solid fa-caret-right"></i>
+                            <span>Phim viễn tưởng</span>
+                        </li>
+                        <li class="toogle-movie-item">
+                            <i class="fa-solid fa-caret-right"></i>
+                            <span>Phim thần thoại</span>
+                        </li>
+                        <li class="toogle-movie-item">
+                            <i class="fa-solid fa-caret-right"></i>
+                            <span>TV shows</span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="items-toogle">
+                Quốc gia
+
+                <ul class="toogle-category-items">
+                    <li class="toogle-movie-item">
+                        <i class="fa-solid fa-caret-right"></i>
+                        <span>Phim Âu Mỹ</span>
+                    </li>
+                    <li class="toogle-movie-item">
+                        <i class="fa-solid fa-caret-right"></i>
+                        <span>Phim Nhật bản</span>
+                    </li>
+                    <li class="toogle-movie-item">
+                        <i class="fa-solid fa-caret-right"></i>
+
+                        <span>Phim Thái Lan</span>
+                    </li>
+                    <li class="toogle-movie-item">
+                        <i class="fa-solid fa-caret-right"></i>
+                        <span> Phim Việt Nam</span>
+                    </li>
+                </ul>
+                <ul class="toogle-category-items">
+                    <li class="toogle-movie-item">
+                        <i class="fa-solid fa-caret-right"></i>
+                        <span>Phim Hàn Quốc</span>
+                    </li>
+                    <li class="toogle-movie-item">
+                        <i class="fa-solid fa-caret-right"></i>
+                        <span>Phim Đài Loan</span>
+                    </li>
+                    <li class="toogle-movie-item">
+                        <i class="fa-solid fa-caret-right"></i>
+                        <span>Phim Ấn Độ</span>
+                    </li>
+                    <li class="toogle-movie-item">
+                        <i class="fa-solid fa-caret-right"></i>
+                        <span>Phim Indonesia</span>
+                    </li>
+                </ul>
+                <ul class="toogle-category-items">
+                    <li class="toogle-movie-item">
+                        <i class="fa-solid fa-caret-right"></i>
+                        <span>Phim Trung Quốc </span>
+                    </li>
+                    <li class="toogle-movie-item">
+                        <i class="fa-solid fa-caret-right"></i>
+                        <span>Phim Hồng Công</span>
+                    </li>
+                    <li class="toogle-movie-item">
+                        <i class="fa-solid fa-caret-right"></i>
+                        <span>Phim Philippines</span>
+                    </li>
+                    <li class="toogle-movie-item">
+                        <i class="fa-solid fa-caret-right"></i>
+                        <span>Phim Singgapore</span>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="play-container container">
+            <img
+                src="./play-page/black-adam/blackAdam.jpg"
+                alt=""
+                class="play-img"
+            />
+            <div class="watch-btn play-btn">
+                <i class="fa-solid fa-play"></i>
+            </div>
+
+            <div class="play-text">
+                <h2 class="name-movie">Black Adam</h2>
+                <div class="icon-start">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span>4/5</span>
+                </div>
+                <div class="btn-play-movie">
+                    <a href="#" class="watch-btn watch-movie"> xem phim </a>
+
+                    <a href="#" class="watch-btn watch-trailer">
+                        <!-- <i class="fa-solid fa-play"></i> -->
+                        <span>trailer</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="video-container">
+                <div class="video-box">
+                    <video id="video" src="" controls></video>
+                    <i class="fa-solid fa-x close-video"></i>
+                </div>
+            </div>
+
+            <div class="video-trailer">
+                <div class="trailer-box">
+                    <video id="trailer" src="" controls></video>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- ---------------- -->
+
+        <div class="info-movie container">
+            <div class="table-movie">
+                <ul>
+                    <li>
+                        <label for="">Đang phát</label>
+                        <span style="color: red"> HD Vietsub</span>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <label for="">Thể Loại :</label>
+                        <span>
+                            Phiêu Lưu - Hành Động, Khoa Học - Viễn Tưởng</span
+                        >
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <label for="">Đạo diễn :</label>
+                        <span> James Cameron </span>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <label for="">Thời Lượng :</label>
+                        <span>120 phút</span>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <label for="">năm phát hành :</label>
+                        <span> 2022</span>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <label for="">Quốc :</label>
+                        <span> Âu - Mỹ</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-movie">
+                <h3>Nội dung phim và Review</h3>
+                <p class="content-review">
+                    Black Adam là câu chuyện gần 5.000 năm sau khi anh ta được
+                    ban cho sức mạnh toàn năng của các vị thần Ai Cập - và bị
+                    cầm tù nhanh chóng - Black Adam được giải thoát khỏi ngôi mộ
+                    trần gian của mình, sẵn sàng giải phóng hình thức công lý
+                    độc nhất của anh ta trên thế giới hiện đại.
+                </p>
+            </div>
+
+            <!-- diễn viên -->
+            <div class="performer container">
+                <div class="cast-heading">Diễn Viên</div>
+                <div class="cast">
+                    <div class="cast-box">
+                        <a href="https://vi.wikipedia.org/wiki/Dwayne_Johnson">
+                            <img
+                                src="./play-page/black-adam/DwayneJohnson.jpeg"
+                                alt=""
+                                class="cars-img"
+                            />
+                            <span class="cast-title">Dwayne Johnson</span>
+                        </a>
+                    </div>
+                    <div class="cast-box">
+                        <a href="https://vi.wikipedia.org/wiki/Aldis_Hodge">
+                            <img
+                                src="./play-page/black-adam/AldisHodge.jpeg"
+                                alt=""
+                                class="cars-img"
+                            />
+                            <span class="cast-title">Aldis Hodge</span>
+                        </a>
+                    </div>
+                    <div class="cast-box">
+                        <a href="https://vi.wikipedia.org/wiki/Henry_Cavill">
+                            <img
+                                src="./play-page/black-adam/HenryCavill.jpeg"
+                                alt=""
+                                class="cars-img"
+                            />
+                            <span class="cast-title">Henry Cavill</span>
+                        </a>
+                    </div>
+                    <div class="cast-box">
+                        <a
+                            href="https://en.wikipedia.org/wiki/Jennifer_Holland"
+                        >
+                            <img
+                                src="./play-page/black-adam/JenniferHolland.jpeg"
+                                alt=""
+                                class="cars-img"
+                            />
+                            <span class="cast-title">Jennifer Holland</span>
+                        </a>
+                    </div>
+                    <div class="cast-box">
+                        <a
+                            href="
+                            https://vi.wikipedia.org/wiki/Pierce_Brosnan"
+                        >
+                            <img
+                                src="./play-page/black-adam/PierceBrosnan.jpeg"
+                                alt=""
+                                class="cars-img"
+                            />
+                            <span class="cast-title">Pierce Brosnan</span>
+                        </a>
+                    </div>
+                    <div class="cast-box">
+                        <a
+                            href="
+                            https://en.wikipedia.org/wiki/Quintessa_Swindell
+                            "
+                        >
+                            <img
+                                src="./play-page/black-adam/QuintessaSwindell.jpeg"
+                                alt=""
+                                class="cars-img"
+                            />
+                            <span class="cast-title">Quintessa Swindell</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popular-content swiper popular-movies container">
+                <div class="heading">
+                    <h2 class="heading-title">Phim Đề cử</h2>
+                </div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="movie-box">
+                            <img
+                                src="./img/spriderman.jpeg"
+                                alt=""
+                                class="movie-box-img"
+                            />
+                            <div class="box-text">
+                                <h2 class="movie-title">
+                                    Người Nhện Không Còn Nhà
+                                </h2>
+                                <span class="movie-type">Acdion</span>
+                                <a
+                                    href="spiderMan.html"
+                                    class="watch-btn play-btn"
+                                >
+                                    <i class="fa-solid fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="movie-box">
+                            <img
+                                src="./play-page/antMan/download.jpeg"
+                                alt=""
+                                class="movie-box-img"
+                            />
+                            <div class="box-text">
+                                <h2 class="movie-title">Người Kiến 3</h2>
+                                <span class="movie-type">Acdion</span>
+                                <a
+                                    href="antMan.html"
+                                    class="watch-btn play-btn"
+                                >
+                                    <i class="fa-solid fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="movie-box">
+                            <img
+                                src="./img/avatar2.jpeg"
+                                alt=""
+                                class="movie-box-img"
+                            />
+                            <div class="box-text">
+                                <h2 class="movie-title">Avatrar 2</h2>
+                                <span class="movie-type">Acdion</span>
+                                <a
+                                    href="avatar_2.html"
+                                    class="watch-btn play-btn"
+                                >
+                                    <i class="fa-solid fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="movie-box">
+                            <img
+                                src="./img/avatar1.jpeg"
+                                alt=""
+                                class="movie-box-img"
+                            />
+                            <div class="box-text">
+                                <h2 class="movie-title">Avatar 1</h2>
+                                <span class="movie-type">Acdion</span>
+                                <a
+                                    href="avatar_1.html"
+                                    class="watch-btn play-btn"
+                                >
+                                    <i class="fa-solid fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="movie-box">
+                            <img
+                                src="./img/venom.jpeg"
+                                alt=""
+                                class="movie-box-img"
+                            />
+                            <div class="box-text">
+                                <h2 class="movie-title">Venom</h2>
+                                <span class="movie-type">Acdion</span>
+                                <a href="venom.html" class="watch-btn play-btn">
+                                    <i class="fa-solid fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="end-movie-content container">
+                <div class="end-movie">
+                    <a href="" class="logo-end">
+                        <img src="./img/avengers-logo.png" alt="" />
+                    </a>
+                    <p>
+                        Phimmoi - Trang xem phim Online với giao diện mới được
+                        bố trí và thiết kế thân thiện với người dùng. Nguồn phim
+                        được tổng hợp từ các website lớn với đa dạng các đầu
+                        phim và thể loại vô cùng phong phú.
+                    </p>
+                </div>
+                <div class="menu-end">
+                    <ul>
+                        <li>Phim Mới</li>
+                        <li>Phim Hay</li>
+                        <li>Phim Hot</li>
+                        <li>Phim bộ</li>
+                        <li>Phim lẻ</li>
+                    </ul>
+                    <ul>
+                        <li>Phim Chiếu Rạp</li>
+                        <li>Phim mỹ</li>
+                        <li>phimmoi</li>
+                        <li>Phim hàn quốc</li>
+                        <li>Liện hệ</li>
+                    </ul>
+                    <ul>
+                        <li>Phim Chiếu Rạp</li>
+                        <li>Phim mỹ</li>
+                        <li>phimmoi</li>
+                        <li>Phim hàn quốc</li>
+                        <li>Liện hệ</li>
+                    </ul>
+
+                    <ul>
+                        <li>Phim trung quốc</li>
+                        <li>khiếu nại bản quyền</li>
+                        <li>Phim hành động</li>
+                        <li>Phim thái lan</li>
+                        <li>© 2022</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script src="./swiper-bundle.min.js"></script>
+        <script src="./main.js"></script>
+    </body>
+</html>

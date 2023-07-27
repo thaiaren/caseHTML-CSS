@@ -43,6 +43,20 @@
                 font-size: 15px;
             }
         }
+        @include m.mobile {
+            & {
+                bottom: 10px;
+                left: 10px;
+                margin-left: 20px;
+            }
+            .name-movie {
+                font-size: 13px;
+            }
+
+            .icon-start {
+                font-size: 10px;
+            }
+        }
     }
 
     .video-container {
@@ -194,9 +208,13 @@
             margin-bottom: 20px;
 
             .cast-box {
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
+                .link-cars {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
+                    color: white;
+                }
 
                 .cars-img {
                     height: 180px;

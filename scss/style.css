@@ -677,6 +677,19 @@ header .nav .home .home-link .home-link-title {
     font-size: 15px;
   }
 }
+@media (max-width: 480px) {
+  .play-container .play-text {
+    bottom: 10px;
+    left: 10px;
+    margin-left: 20px;
+  }
+  .play-container .play-text .name-movie {
+    font-size: 13px;
+  }
+  .play-container .play-text .icon-start {
+    font-size: 10px;
+  }
+}
 .play-container .video-container {
   position: fixed;
   top: 0;
@@ -805,10 +818,12 @@ header .nav .home .home-link .home-link-title {
   gap: 20px;
   margin-bottom: 20px;
 }
-.info-movie .performer .cast .cast-box {
+.info-movie .performer .cast .cast-box .link-cars {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
+  color: white;
 }
 .info-movie .performer .cast .cast-box .cars-img {
   height: 180px;

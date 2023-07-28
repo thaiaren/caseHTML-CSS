@@ -506,6 +506,11 @@ header .nav .home .home-link .home-link-title {
     margin-top: 90px;
   }
 }
+@media (max-width: 480px) {
+  .trailer-video.container {
+    margin-top: 90px;
+  }
+}
 .trailer-video video {
   position: relative;
   width: 100%;
@@ -547,6 +552,13 @@ header .nav .home .home-link .home-link-title {
 @media (max-width: 768px) {
   .trailer-video .trailer-text .btn-play-movie .watch-movie {
     height: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .trailer-video .trailer-text {
+    padding-left: 20px;
+    position: absolute;
+    max-width: 30%;
   }
 }
 

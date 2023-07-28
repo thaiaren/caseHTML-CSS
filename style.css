@@ -62,7 +62,9 @@ body {
 h2 {
     color: #ebebc8;
 }
-
+.filter-container {
+    margin-top: 100px;
+}
 /* ----thể loại */
 
 /* thể loại end---------- */
